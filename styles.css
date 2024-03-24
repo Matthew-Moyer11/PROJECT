@@ -1,0 +1,334 @@
+/*NAVIGATION AND HEADER*/
+/* Styles for the header */
+header {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 10px 0;
+}
+
+/* Styles for the navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav div,
+nav form {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #b37400;
+}
+
+/* Styles for the search form */
+form input[type="text"] {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 5px 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #b37400;
+}
+
+
+/*INDEX MAIN CONTENT*/
+.monke {
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers children horizontally */
+    align-items: center; /* Centers children vertically */
+    height: 80vh; /* Sets the height of the div to be the full viewport height */
+    background-image: url('orange.jpg'); /* Ensure the path to your image is correct */
+    background-size: 100%; /* Makes sure the entire image fits within the div */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+}
+
+.greybox {
+    background-color: rgba(128, 128, 128, 0.5); /* Semi-transparent gray box */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px; /* Rounded corners for the box */
+    max-width: 80%;
+}
+
+.center h1 {
+    font-weight: bold; /* Bold text for h1 */
+    font-size: 40px;
+    color:#e7e7e7;
+}
+
+.center {
+    text-align: center; /* Centers the text within the .center div */
+    font-size: 30px;
+    color:#e7e7e7;
+    white-space: normal; /* Ensures that whitespace is handled normally, allowing wrapping */
+    word-wrap: break-word; /* Allows long words to break and wrap onto the next line */
+    max-width: 60%; 
+    margin: auto;
+}
+
+/*BOTTOM NAVGATION FOR HOME PAGE*/
+
+.navnew {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    height: 30vh; 
+}
+
+.navnew div {
+    width: 375px; /* Adjust width for better rectangle shape */
+    height: 200px; /* Adjust height as per requirement */
+    background-color: #f0f0f0; /* Light background color for the rectangles */
+    border-radius: 100px; /* Apply rounded corners to create a rounded rectangle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    transition: background-color 0.3s; 
+
+}
+
+.navnew div:hover {
+    background-color:#b37400; /* Change background color to orange on hover */
+}
+
+.navnew div h1 {
+    margin: 0;
+}
+
+.navnew div h1 a {
+    font-weight: bold; 
+    color: black;
+    text-decoration: none; 
+    display: block; /* Make the link fill the container for easier clicking */
+}
+
+/*FOOTER STYLE*/
+footer {
+    background-color: #f8f8f8;
+    border-top: 1px solid #e7e7e7;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+footer p {
+    margin: 0 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+footer img {
+    margin-left: 10px;
+}
+
+/*WHO WE ARE SLIDESHOW*/
+
+
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the flex items (the image and the h1 tag) horizontally */
+}
+
+.image-container h1 {
+    margin-bottom: 20px; /* Adds some space between the title and the image */
+}
+
+.image-container img {
+    width: 500px; /* Width of the image */
+    height: 500px; /* Height of the image */
+    border-radius: 15px; /* Rounded corners of the image */
+    object-fit: cover; /* Ensures the image covers the area without losing its aspect ratio */
+}
+.mySlides {
+    display: none;
+    animation: fadein 2s; /* Adds a fade-in effect */
+}
+
+
+/* Fades in the slides */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /*ANIMAL CATALOG*/
+.yes{
+    margin: 0;
+    padding: 0;
+    height: 100%; /* This ensures the body takes up at least the full viewport height */
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100vw; /* Ensure the body covers full viewport width */
+}
+  .greybox2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content horizontally in the flex container */
+    align-items: center; /* Centers content vertically in the flex container */
+    width: 80%; /* Adjust width of the grey box */
+    height: auto; /* Adjust based on content size */
+    padding: 20px; /* Add some padding */
+    background-color: rgba(128, 128, 128, 0.5); /* Semi-transparent gray */
+    border-radius: 10px;
+}
+
+input[type="text"], select, button {
+    display: block; /* Makes each element take its own line */
+    margin: 10px auto; /* Centers the elements horizontally and adds some vertical spacing */
+    padding: 10px; /* Adds some padding inside the input, select, and button for better appearance */
+    width: 80%; /* Makes the input, select, and button wider, adjust as necessary */
+}
+
+button {
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+    background-color: #007bff; /* Example button color, change as desired */
+    color: white; /* Text color for the button */
+    border: none; /* Removes the default border */
+    border-radius: 5px; /* Rounds the corners of the button */
+}
+/* IMAGES */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: flex; /* Aligns children divs horizontally */
+    justify-content: center; /* Centers the children divs horizontally */
+    align-items: center; /* Centers the children divs vertically */
+    height: 100vh;
+}
+
+.image-link {
+    display: block;
+    width: 33.33%; /* Divides the container equally for three divs */
+    height: 100%; /* Optional: Adjust based on your design */
+    text-decoration: none; /* Removes underline from links */
+}
+
+.image {
+    width: 100%;
+    height: 400px; /* Adjust based on your design */
+    background-size: cover;
+    background-position: center;
+}
+
+#image1 {
+    background-image: url('SunBear.png');
+}
+
+#image2 {
+    background-image: url('Jag.png');
+}
+
+#image3 {
+    background-image: url('PBEAR.png');
+}
+
+.big2 {
+    text-align: center; /* Centers the text within the .center div */
+    font-size: 30px;
+    color:#000000;
+    white-space: normal; /* Ensures that whitespace is handled normally, allowing wrapping */
+    word-wrap: break-word; /* Allows long words to break and wrap onto the next line */
+    max-width: 60%; 
+    margin: auto;
+}
+
+/*CONTACT US FORM*/
+
+main.contact-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+
+main.contact-form-container h1 {
+    text-align: center;
+    color: #333; /* Dark grey for contrast */
+    margin-bottom: 20px;
+}
+
+.form-row {
+    margin-bottom: 15px; /* Spacing between form rows */
+    width:200px
+}
+
+main.contact-form-container label {
+    display: block;
+    margin-bottom: 5px; /* Small space between label and input */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding does not affect width */
+}
+
+main.contact-form-container input[type="submit"] {
+    background-color: #007bff; /* Bright blue, adjustable to fit theme */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+main.contact-form-container input[type="submit"]:hover {
+    background-color: #0056b3; /* Slightly darker on hover */
+}
